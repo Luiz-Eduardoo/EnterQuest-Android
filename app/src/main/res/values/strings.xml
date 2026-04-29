@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EnterQuest</string>
+    <string-array name="opcoes_spinner">
+        <item>Selecione o cargo</item>
+        <item>Funcionário</item>
+        <item>Técnico</item>
+        <item>Gerente</item>
+    </string-array>
+</resources>

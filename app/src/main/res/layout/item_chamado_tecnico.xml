@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_card_soft_border"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTituloChamado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título do chamado"
+        android:textColor="#071A33"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSetorChamado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Setor: TI"
+        android:textColor="#4B5563"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtCategoriaChamado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Categoria: Manutenção"
+        android:textColor="#4B5563"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtStatusChamado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_status_chamado"
+        android:paddingStart="12dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="5dp"
+        android:text="Pendente"
+        android:textColor="#007C8A"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
