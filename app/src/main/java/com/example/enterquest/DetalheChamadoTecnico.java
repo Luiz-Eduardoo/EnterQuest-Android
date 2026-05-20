@@ -169,6 +169,11 @@ public class DetalheChamadoTecnico extends AppCompatActivity {
         Map<String, String> body = new HashMap<>();
         body.put("status", novoStatus);
 
+        String idTecnicoLogado = getSharedPreferences("usuario_logado", MODE_PRIVATE)
+                .getString("idUsuario", "");
+
+        body.put("idTecnico", idTecnicoLogado);
+
         ApiService apiService = RetrofitClient
                 .getRetrofitInstance()
                 .create(ApiService.class);

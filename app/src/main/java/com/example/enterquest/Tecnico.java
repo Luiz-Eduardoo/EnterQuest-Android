@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Tecnico extends AppCompatActivity {
 
-    private TextView btnVisualizarChamados, textView6;
+    private TextView btnVisualizarChamados, textView6,  btnLojaRecompensasTecnico, btnAssistenteVirtualTecnico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +39,20 @@ public class Tecnico extends AppCompatActivity {
         });
 
         btnVisualizarChamados = findViewById(R.id.button2);
+        btnLojaRecompensasTecnico = findViewById(R.id.btnLojaRecompensasTecnico);
+        btnAssistenteVirtualTecnico = findViewById(R.id.btnAssistenteVirtualTecnico);
 
         btnVisualizarChamados.setOnClickListener(v -> {
             Intent intent = new Intent(Tecnico.this, VisualizarChamadoTecnico.class);
+            startActivity(intent);
+        });
+        btnLojaRecompensasTecnico.setOnClickListener(v -> {
+            Intent intent = new Intent(Tecnico.this, LojaRecompensas.class);
+            startActivity(intent);
+        });
+
+        btnAssistenteVirtualTecnico.setOnClickListener(v -> {
+            Intent intent = new Intent(Tecnico.this, Chatbot.class);
             startActivity(intent);
         });
     }

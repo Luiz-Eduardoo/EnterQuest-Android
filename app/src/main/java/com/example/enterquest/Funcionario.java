@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Funcionario extends AppCompatActivity {
 
-    private TextView textView6, btnIrAbrirChamado, btnVisualizarChamados;
+    private TextView textView6, btnIrAbrirChamado, btnVisualizarChamados, btnLojaRecompensas, btnAssistenteVirtualFuncionario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,6 @@ public class Funcionario extends AppCompatActivity {
         String nomeFuncionario = getSharedPreferences("usuario_logado", MODE_PRIVATE)
                 .getString("nome", "");
 
-        Toast.makeText(this, "Nome salvo: " + nomeFuncionario, Toast.LENGTH_LONG).show();
 
         if (nomeFuncionario != null && !nomeFuncionario.trim().isEmpty()) {
             textView6.setText("Olá, " + nomeFuncionario + " 👋");
@@ -31,6 +30,8 @@ public class Funcionario extends AppCompatActivity {
         }
 
         btnIrAbrirChamado = findViewById(R.id.btnIrAbrirChamado);
+        btnLojaRecompensas = findViewById(R.id.btnLojaRecompensas);
+        btnAssistenteVirtualFuncionario = findViewById(R.id.btnAssistenteVirtualFuncionario);
 
         btnIrAbrirChamado.setOnClickListener(v -> {
             Intent intent = new Intent(Funcionario.this, AbrirChamado.class);
@@ -41,6 +42,16 @@ public class Funcionario extends AppCompatActivity {
 
         btnVisualizarChamados.setOnClickListener(v -> {
             Intent intent = new Intent(Funcionario.this, VisualizarChamados.class);
+            startActivity(intent);
+        });
+
+        btnLojaRecompensas.setOnClickListener(v -> {
+            Intent intent = new Intent(Funcionario.this, LojaRecompensas.class);
+            startActivity(intent);
+        });
+
+        btnAssistenteVirtualFuncionario.setOnClickListener(v -> {
+            Intent intent = new Intent(Funcionario.this, Chatbot.class);
             startActivity(intent);
         });
     }

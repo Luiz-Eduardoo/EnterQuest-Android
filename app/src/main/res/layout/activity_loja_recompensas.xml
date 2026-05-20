@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F8FBFF"
     android:fillViewport="true"
-    tools:context=".VisualizarChamadoTecnico">
+    tools:context=".LojaRecompensas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -30,11 +30,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtTituloVisualizarChamadoTecnico"
+            android:id="@+id/txtTituloLojaRecompensas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
-            android:text="Chamados"
+            android:text="Loja de Recompensas"
             android:textColor="#071A33"
             android:textSize="28sp"
             android:textStyle="bold"
@@ -43,111 +43,105 @@
             app:layout_constraintTop_toBottomOf="@id/imgLogo" />
 
         <TextView
-            android:id="@+id/txtSubtituloVisualizarChamadoTecnico"
+            android:id="@+id/txtSubtituloLojaRecompensas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="Filtre os chamados e selecione um para visualizar os detalhes e atualizar o status."
+            android:text="Use seus pontos para resgatar recompensas disponíveis."
             android:textColor="#6B7280"
             android:textSize="14sp"
-            android:lineSpacingExtra="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtTituloVisualizarChamadoTecnico" />
+            app:layout_constraintTop_toBottomOf="@id/txtTituloLojaRecompensas" />
 
         <LinearLayout
-            android:id="@+id/cardFiltrosTecnico"
+            android:id="@+id/cardPontosUsuario"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/bg_card_login"
-            android:elevation="5dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_card_soft"
             android:orientation="vertical"
             android:padding="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtSubtituloVisualizarChamadoTecnico">
+            app:layout_constraintTop_toBottomOf="@id/txtSubtituloLojaRecompensas">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filtrar chamados"
+                android:text="Seus pontos disponíveis"
+                android:textColor="#6B7280"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtPontosUsuarioLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="0 pontos"
                 android:textColor="#071A33"
-                android:textSize="16sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="Status"
-                android:textColor="#6B7280"
-                android:textSize="13sp" />
-
-            <Spinner
-                android:id="@+id/spinnerFiltroStatus"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="6dp"
-                android:background="@android:drawable/edit_text" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:text="Setor"
-                android:textColor="#6B7280"
-                android:textSize="13sp" />
-
-            <Spinner
-                android:id="@+id/spinnerFiltroSetor"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="6dp"
-                android:background="@android:drawable/edit_text" />
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/btnMinhasRecompensas"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_button_enterquest"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Minhas Recompensas"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardPontosUsuario" />
+
         <LinearLayout
-            android:id="@+id/cardListaChamadosTecnico"
+            android:id="@+id/cardListaLojaRecompensas"
             android:layout_width="0dp"
             android:layout_height="520dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/bg_card_login"
             android:elevation="5dp"
             android:orientation="vertical"
             android:padding="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardFiltrosTecnico">
+            app:layout_constraintTop_toBottomOf="@id/btnMinhasRecompensas">
 
             <TextView
-                android:id="@+id/txtListaTituloTecnico"
+                android:id="@+id/txtTituloListaRecompensas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chamados disponíveis"
+                android:text="Recompensas disponíveis"
                 android:textColor="#071A33"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtListaSubtituloTecnico"
+                android:id="@+id/txtSubtituloListaRecompensas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Toque em um chamado para abrir os detalhes"
+                android:text="Toque em uma recompensa para resgatar"
                 android:textColor="#6B7280"
                 android:textSize="13sp" />
 
             <ListView
-                android:id="@+id/listViewChamadosTecnico"
+                android:id="@+id/listViewLojaRecompensas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/transparent"
                 android:cacheColorHint="@android:color/transparent"
-                android:divider="#E5E7EB"
-                android:dividerHeight="1dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="12dp"
                 android:listSelector="@android:color/transparent"
                 android:padding="0dp" />
 

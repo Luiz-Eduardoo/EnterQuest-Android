@@ -117,12 +117,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_button_outline"
+                android:background="@drawable/bg_button_enterquest"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
                 android:text="Visualizar Chamados"
-                android:textColor="#007C8A"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnLojaRecompensas"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button_enterquest"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Loja de Recompensas"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnAssistenteVirtualFuncionario"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button_enterquest"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Assistente Virtual"
+                android:textColor="#FFFFFF"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

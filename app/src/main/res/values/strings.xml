@@ -4,6 +4,6 @@
         <item>Selecione o cargo</item>
         <item>Funcionário</item>
         <item>Técnico</item>
-        <item>Gerente</item>
+        <item>Admin</item>
     </string-array>
 </resources>

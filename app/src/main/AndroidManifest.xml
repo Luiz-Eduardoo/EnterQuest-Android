@@ -15,6 +15,30 @@
         android:theme="@style/Theme.EnterQuest"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".ResgateRecompensasAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".MinhasRecompensas"
+            android:exported="false" />
+        <activity
+            android:name=".LojaRecompensas"
+            android:exported="false" />
+        <activity
+            android:name=".ConfigurarPontuacao"
+            android:exported="false" />
+        <activity
+            android:name=".DetalheRecompensaGerente"
+            android:exported="false" />
+        <activity
+            android:name=".CadastrarRecompensa"
+            android:exported="false" />
+        <activity
+            android:name=".GerenciarRecompensas"
+            android:exported="false" />
+        <activity
             android:name=".DashboardGerente"
             android:exported="false" />
         <activity

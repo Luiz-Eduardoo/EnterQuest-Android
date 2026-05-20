@@ -45,7 +45,7 @@ public class CriarUsuario extends AppCompatActivity {
                 "Selecione o cargo",
                 "Funcionário",
                 "Técnico",
-                "Gerente"
+                "Admin"
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
@@ -150,7 +150,7 @@ public class CriarUsuario extends AppCompatActivity {
             return "FUNCIONARIO";
         } else if (cargoSelecionado.equals("Técnico")) {
             return "TECNICO";
-        } else if (cargoSelecionado.equals("Gerente")) {
+        } else if (cargoSelecionado.equals("Admin")) {
             return "GERENTE";
         }
 

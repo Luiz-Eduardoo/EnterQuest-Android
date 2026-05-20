@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             return "FUNCIONARIO";
         } else if (cargoSelecionado.equals("Técnico") || cargoSelecionado.equals("TECNICO")) {
             return "TECNICO";
-        } else if (cargoSelecionado.equals("Gerente") || cargoSelecionado.equals("GERENTE")) {
+        } else if (cargoSelecionado.equals("Admin") || cargoSelecionado.equals("GERENTE")) {
             return "GERENTE";
         }
 

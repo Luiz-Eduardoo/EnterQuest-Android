@@ -15,6 +15,8 @@ public class Gerente extends AppCompatActivity {
     private TextView btnCriarUsuarioGerente;
     private TextView btnAbrirDashboardGerente;
 
+    private TextView btnGerenciarRecompensasGerente;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class Gerente extends AppCompatActivity {
         btnTodosChamadosGerente = findViewById(R.id.btnTodosChamadosGerente);
         btnCriarUsuarioGerente = findViewById(R.id.btnCriarUsuarioGerente);
         btnAbrirDashboardGerente = findViewById(R.id.btnAbrirDashboardGerente);
+        btnGerenciarRecompensasGerente = findViewById(R.id.btnGerenciarRecompensasGerente);
 
         btnAbrirChamadoGerente.setOnClickListener(v -> {
             Intent intent = new Intent(Gerente.this, AbrirChamado.class);
@@ -59,6 +62,10 @@ public class Gerente extends AppCompatActivity {
 
         btnAbrirDashboardGerente.setOnClickListener(v -> {
             Intent intent = new Intent(Gerente.this, DashboardGerente.class);
+            startActivity(intent);
+        });
+        btnGerenciarRecompensasGerente.setOnClickListener(v -> {
+            Intent intent = new Intent(Gerente.this, GerenciarRecompensas.class);
             startActivity(intent);
         });
     }
